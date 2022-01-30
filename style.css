@@ -47,7 +47,11 @@ main {
     flex-direction: row;
 }
 
-
+.images {
+    position: relative;
+    top: 0;
+    left: 0;
+}
 
 /* text */
 
@@ -80,29 +84,38 @@ hr {
     border: none;
 }
 
-
-
-
-
-
 /* images */
 
 .main-pic {
     border-radius: 10px;
+    position: relative;
+    width: 20em;
+    height: 20em;
+    top: 0;
+    left: 0;
+}
 
+.view {
+    visibility: hidden;
+    position: absolute;
+    top: .01em;
+    left: .01em;
+    padding: 8.5em;
+    background-color: rgba(0, 255, 247, 0.37);
+    border-radius: 10px;
 }
 
 .icon {
-    width: 1em;
-    height: 1.5em;
-    margin: 0.875em 0.625em 0 0;
+    width: 0.8em;
+    height: 1.3em;
+    margin: 1em 0.625em 0 0;
 }
 
 .clock {
-    width: 1.5em;
-    height: 1.5em;
+    width: 1.3em;
+    height: 1.3em;
     padding: .2em;
-    margin: 0.75em 0.625em 0 0;
+    margin: 0.85em 0.625em 0 0;
 }
 
 .avatar {
@@ -114,8 +127,33 @@ hr {
 }
 
 
+/* active states */
+span:hover, h1:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.main-pic:hover + .view{
+    visibility: visible;
+    pointer-events:none;   
+}
 
 
+@media (min-width: 375px) and (max-width: 899px){
+    .card {
+        width: 18em;
+        height: 32.5em;
+        padding: 1.5em;
+        margin: 3em;
+    }
 
+    .main-pic {
+        width: 18em;
+        height: 18em;
+    }
 
+    .paragraph {
+        margin-bottom: 0;
+    }
+
+}
 
