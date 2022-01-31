@@ -151,6 +151,10 @@ span:hover, h1:hover {
         height: 18em;
     }
 
+    .view {
+        padding: 7.5em;
+    }
+
     .paragraph {
         margin-bottom: 0;
     }
