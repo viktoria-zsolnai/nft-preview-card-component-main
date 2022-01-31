@@ -14,8 +14,8 @@ main {
 }
 
 .card {
-    width: 20em;
-    height: 36em;
+    width: 19em;
+    height: 35em;
     padding: 1.5em;
     margin: 8em;
     border-radius: 15px;
@@ -89,8 +89,8 @@ hr {
 .main-pic {
     border-radius: 10px;
     position: relative;
-    width: 20em;
-    height: 20em;
+    width: 18.75em;
+    height: 18.75em;
     top: 0;
     left: 0;
 }
@@ -100,7 +100,7 @@ hr {
     position: absolute;
     top: .01em;
     left: .01em;
-    padding: 8.5em;
+    padding: 7.9em;
     background-color: rgba(0, 255, 247, 0.37);
     border-radius: 10px;
 }
